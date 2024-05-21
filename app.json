@@ -5,6 +5,32 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "android": {
+      "permissions": [
+        "INTERNET"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAvspuwEEG6SSPj4ytIw2PLnbIT9EQBHsM"
+        }
+      }
+    },
+    "ios": {
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "allowsArbitraryLoads": true
+        }
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAvspuwEEG6SSPj4ytIw2PLnbIT9EQBHsM"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "permissions": [
+      "foregroundLocation"
     ]
   },
   "name": "ad"
