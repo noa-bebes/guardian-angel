@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "ad",
+    "slug": "ad",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "myapp",
+              "host": "*",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "permissions": [
+        "INTERNET",
+        "SEND_SMS",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAvspuwEEG6SSPj4ytIw2PLnbIT9EQBHsM"
+        }
+      }
+    },
+    "ios": {
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "myapp"
+            ]
+          }
+        ],
+        "NSAppTransportSecurity": {
+          "allowsArbitraryLoads": true
+        },
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to provide alerts based on your current location.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location even when in the background to provide alerts based on your current location."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAvspuwEEG6SSPj4ytIw2PLnbIT9EQBHsM"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7edee8e5-9a1c-416b-99e0-7c9e5f90f2d8"
+      }
+    },
+    "owner": "tikva114"
+  },
+  "name": "ad"
+}
